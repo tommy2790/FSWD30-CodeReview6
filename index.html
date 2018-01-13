@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Mediathek</title>
+  
+    
+    
+    
+</head>
+<body>
+	<header>
+
+        <!-- Navigation -->
+		<nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
+	        <div class="container">
+	          <a class="navbar-brand" href="#">Mediathek</a>
+	              <ul class="navbar-nav">
+	                  <li class="nav-item">
+	                      <a class="nav-link" href="#">Home</a>
+	                  </li>
+	                  <li class="nav-item">
+	                      <a class="nav-link" href="#">About</a>
+	                  </li>
+	                  <li class="nav-item">
+	                      <a class="nav-link" href="#">Services</a>
+	                  </li class="nav-item">
+	                  <li class="nav-item">
+	                      <a class="nav-link" href="#">Contact</a>
+	                  </li>
+	              </ul>
+	          </div>
+	    </nav>
+        
+	</header>
+
+
+
+	<main>
+
+        <!-- ****** User Input ****** -->
+		<div class="container">
+		<form>
+            <div class="form-group">
+                <label for="name">Title</label>
+                <input type="text" id="name" class="form-control form-control-sm" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="name">Album</label>
+                <input type="text" id="name" class="form-control form-control-sm" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="name">Publisher</label>
+                <input type="text" id="name" class="form-control form-control-sm" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" class="form-control">
+                <option>Rock</option>
+                <option>Metal</option>
+                <option>Pop</option>
+                <option>Jazz</option>
+                <option>Classic</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="file">Upload image</label>
+                <input type="file" id="file" class="form-control-file">
+                <small id="fileHelp" class="form-text text-muted">Max 3mb size</small>
+            </div>
+            <div class="form-group">
+                <label for="message">Add link</label>
+                <textarea id="message" rows="3" class="form-control"></textarea>
+            </div>
+        </form>
+        <!-- ****** Media Showcase ****** -->
+		<div class="d-flex flex-row flex-wrap row-hl">
+		  	<div class="p-4 item-hl">
+		  		<div class="card" style="width:20rem">
+            		<img class="card-img-top" src="https://img.discogs.com/83_nbhesCBVGH5mQ0Vf8CJ_Vi9o=/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-2760318-1348302694-7084.jpeg.jpg" alt="Card image cap">
+            		<div class="card-body">
+                		<h4 class="card-title" id="title0"></h4>
+                		<p class="card-text">Author: <span id="author0"></span></p>
+						<p class="card-text">Genre: <span id="genre0"></span></p>
+						<p class="card-text">Publisher: <span id="publisher0"></span></p>
+						<p class="card-text">Rating: <span id="rating0"></span>&#9733</p>
+                 		<a href="https://www.youtube.com/watch?v=Onyh2a4IlWg&list=PLA84D21AC901F7D0D" class="btn btn-success btn-block">Listen</a>
+            		</div>
+        		</div> 
+    		</div>
+    		<div class="p-4 item-hl">
+		  		<div class="card" style="width:20rem">
+            		<img class="card-img-top" src="https://img.discogs.com/pSgvq5F2uM4NUAMlTECWphH3ETM=/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-499497-1456047383-9489.jpeg.jpg" alt="Card image cap">
+            		<div class="card-body">
+                		<h4 class="card-title" id="title1"></h4>
+                		<p class="card-text">Author: <span id="author1"></span></p>
+						<p class="card-text">Genre: <span id="genre1"></span></p>
+						<p class="card-text">Publisher: <span id="publisher1"></span></p>
+						<p class="card-text">Rating: <span id="rating1"></span>&#9733</p>
+                 		<a href="https://www.youtube.com/watch?v=aMTBDxJzu5w" class="btn btn-success btn-block">Listen</a>
+            		</div>
+        		</div> 
+    		</div>
+    		<div class="p-4 item-hl">
+		  		<div class="card" style="width:20rem">
+            		<img class="card-img-top" src="https://img.discogs.com/mHT0SExHEPpIOq3ULJIWoxDcwqw=/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-11272687-1513175345-1037.jpeg.jpg" alt="Card image cap">
+            		<div class="card-body">
+                		<h4 class="card-title" id="title2"></h4>
+                		<p class="card-text">Author: <span id="author2"></span></p>
+						<p class="card-text">Genre: <span id="genre2"></span></p>
+						<p class="card-text">Publisher: <span id="publisher2"></span></p>
+						<p class="card-text">Rating: <span id="rating2"></span>&#9733</p>
+                 		<a href="https://www.youtube.com/watch?v=sCo56EkGJuU" class="btn btn-success btn-block">Listen</a>
+            		</div>
+        		</div> 
+    		</div>
+    		<div class="p-4 item-hl">
+		  		<div class="card" style="width:20rem">
+            		<img class="card-img-top" src="https://img.discogs.com/dHDyux91xe5QHzDeY28sXmuioWU=/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-1934367-1383908438-4175.jpeg.jpg">
+            		<div class="card-body">
+                		<h4 class="card-title" id="title3"></h4>
+                		<p class="card-text">Author: <span id="author3"></span></p>
+						<p class="card-text">Genre: <span id="genre3"></span></p>
+						<p class="card-text">Publisher: <span id="publisher3"></span></p>
+						<p class="card-text">Rating: <span id="rating3"></span>&#9733</p>
+                 		<a href="https://www.youtube.com/watch?v=4tcXblWojdM&list=PLOJWLg2UKa6mRh_Akp-F2JyXRH9oN3jCE" class="btn btn-success btn-block">Listen</a>
+            		</div>
+        		</div> 
+    		</div>
+    		<div class="p-4 item-hl">
+		  		<div class="card" style="width:20rem">
+            		<img class="card-img-top" src="https://img.discogs.com/ruNIBtsDq3CaiM--z9WllX2qHZE=/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-6534046-1421436809-4051.jpeg.jpg">
+            		<div class="card-body">
+                		<h4 class="card-title" id="title4"></h4>
+                		<p class="card-text">Author: <span id="author4"></span></p>
+						<p class="card-text">Genre: <span id="genre4"></span></p>
+						<p class="card-text">Publisher: <span id="publisher4"></span></p>
+						<p class="card-text">Rating: <span id="rating4"></span>&#9733</p>
+                 		<a href="https://www.youtube.com/watch?v=IfRCTJmmgpY" class="btn btn-success btn-block">Listen</a>
+            		</div>
+        		</div> 
+    		</div>
+			<div class="p-4 item-hl">
+		  		<div class="card" style="width:20rem">
+            		<img class="card-img-top" src="https://img.discogs.com/eUJfvP2gBkWtV3Xp6g4orlkkJz8=/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-4120811-1454864395-6555.jpeg.jpg">
+            		<div class="card-body">
+                		<h4 class="card-title" id="title5"></h4>
+                		<p class="card-text">Author: <span id="author5"></span></p>
+						<p class="card-text">Genre: <span id="genre5"></span></p>
+						<p class="card-text">Publisher: <span id="publisher5"></span></p>
+						<p class="card-text">Rating: <span id="rating5"></span>&#9733</p>
+                 		<a href="https://www.youtube.com/watch?v=fcNtV41jwj4" class="btn btn-success btn-block">Listen</a>
+            		</div>
+        		</div> 
+    		</div>
+    		
+		</div>
+		</div>
+	</main>
+
+	<footer>
+		
+	</footer>
+	
+	<script src="script.js">
+      
+
+	</script>	
+
+  	
+</body>
+</html>
